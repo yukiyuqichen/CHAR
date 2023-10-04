@@ -7,7 +7,6 @@ setup(
     author_email='cyq0722@pku.edu.cn',
     packages=find_packages(),
     install_requires=[
-        'os',
         'msgpack',
     ],
     package_data={
