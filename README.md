@@ -39,18 +39,16 @@ converter.convert_file(input_file, output_file)
 
 ## Data source
 
-**CBDB Project**
-<a href="https://projects.iq.harvard.edu/cbdb">   <img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="35">
-</a>
+**[CBDB Project](https://projects.iq.harvard.edu/cbdb)**
+<img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="35">
 
-**OpenCC**
-<a href="https://github.com/BYVoid/OpenCC">   <img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="25">
-</a>
+**[OpenCC](https://github.com/BYVoid/OpenCC)**
+<img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="25">
 [![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
 
-**<a href="https://dict.variants.moe.edu.tw/variants/rbt/home.do" style="color: black;">Dictionary of Variant Chinese Characters</a>**
+**[Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/variants/rbt/home.do)**
 
-**<a href="http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html" style="color: black;">General Standard Chinese Characters Table</a>**
+**[General Standard Chinese Characters Table](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)**
 
 
 ## Data filtering
