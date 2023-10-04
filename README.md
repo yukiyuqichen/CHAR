@@ -13,8 +13,7 @@ converter = CharConverter('v2t')
 converted_text = converter.convert('')
 ```
 ## Contributor
-Hongsu Wang (Project manager)
-Yuqi Chen (Data collection and programing)
-Yiyi Wang (Proofreading)
-Fengyi Ji (Data collection)
+Yuqi Chen (data collection and programing), Yiyi Wang (proofreading), Fengyi Ji (data collection)
+
+Hongsu Wang (project manager)
 
