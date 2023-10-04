@@ -1,12 +1,14 @@
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png)
-
+<p align="center">
+<a href="https://pypi.org/project/char-converter">
+    <img src="https://img.shields.io/pypi/v/char-converter.svg" /></a>
+<a href="http://www.apache.org/licenses/">
+    <img src="https://img.shields.io/badge/License-Apache--2.0-green.svg" /></a>
+<a href="https://colab.research.google.com/github/yukiyuqichen/CHAR/blob/main/test/test.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+</p>
 
 # Chinese character variant converter
-
-[![image](https://img.shields.io/pypi/v/char-converter.svg)](https://pypi.org/project/char-converter)
-[![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yukiyuqichen/CHAR/blob/main/test/test.ipynb)
-
 
 ## Install
 ```
@@ -61,7 +63,7 @@ converter.convert_file(input_file, output_file)
 
 **Hongsu Wang** (project manager)
 
-**Yiyi Wang** (proofreading), Fengyi Ji (data collection)
+**Yiyi Wang** (proofreading), **Fengyi Ji** (data collection)
 
 
 
