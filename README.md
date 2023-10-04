@@ -65,7 +65,7 @@ converter.convert_file(input_file, output_file)
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/workflow.png)
 
 
-## Contributor
+## Contributors
 
 **Yuqi Chen** (data collection and programing)
 
