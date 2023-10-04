@@ -48,7 +48,11 @@ converter.convert_file(input_file, output_file)
 
 
 ## Contributor
-Yuqi Chen (data collection and programing), Yiyi Wang (proofreading), Fengyi Ji (data collection)
+Yuqi Chen (data collection and programing)
 
 Hongsu Wang (project manager)
+
+Yiyi Wang (proofreading), Fengyi Ji (data collection)
+
+
 
