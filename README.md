@@ -67,7 +67,7 @@ converter.convert_file(input_file, output_file)
 
 ## Contributors
 
-**Yuqi Chen** (data collection and programing)
+**Yuqi Chen** (data collection and programming)
 
 **Hongsu Wang** (project manager)
 
