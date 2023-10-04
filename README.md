@@ -1,14 +1,18 @@
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png)
 
 
-# CHAR
- Chinese character variant converter
+
+**Chinese character Variant converter**
+
+
+
+
 
 ## Install
 ```
 pip install char-converter
 ```
- 
+
 ## Usage
 ### Convert text
 ```
