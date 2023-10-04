@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/icon/icon.png"/>
+![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/icon/icon.png)
 
 # CHAR
  Chinese character variant converter
