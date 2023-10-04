@@ -2,6 +2,7 @@
 
 # CHAR
  Chinese character variant converter
+ 
 ## Usage
 ```
 from char_converter import CharConverter
