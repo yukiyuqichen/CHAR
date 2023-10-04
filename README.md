@@ -32,6 +32,13 @@ converter.convert_file(input_file, output_file)
 
 ```
 
+## Data source
+[Dictionary of Variant Chinese Characters, by the Ministry of Education, Taiwan, 2017](https://dict.variants.moe.edu.tw/variants/rbt/home.do)
+
+[CBDB Team](https://projects.iq.harvard.edu/cbdb)
+
+[OpenCC](https://github.com/BYVoid/OpenCC)
+
 ## Contributor
 Yuqi Chen (data collection and programing), Yiyi Wang (proofreading), Fengyi Ji (data collection)
 
