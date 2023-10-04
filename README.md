@@ -35,9 +35,17 @@ converter.convert_file(input_file, output_file)
 ## Data source
 [Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/variants/rbt/home.do)
 
+[General Standard Chinese Characters Table](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)
+
 [CBDB Team](https://projects.iq.harvard.edu/cbdb)
 
 [OpenCC](https://github.com/BYVoid/OpenCC)
+
+
+
+## Data filtering
+
+
 
 ## Contributor
 Yuqi Chen (data collection and programing), Yiyi Wang (proofreading), Fengyi Ji (data collection)
