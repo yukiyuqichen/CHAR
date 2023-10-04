@@ -1,4 +1,13 @@
-<img src="https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/icon/icon.png"/>
+Metadata-Version: 2.1
+Name: char-converter
+Version: 0.1
+Summary: A library to convert variant Chinese characters to standard simplified or traditional characters.
+Author: Yuqi Chen
+Author-email: cyq0722@pku.edu.cn
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<img src="https://github.com/yukiyuqichen/CHAR/blob/main/icon/icon.png" width="300" />
 
 # CHAR
  Chinese character variant converter
