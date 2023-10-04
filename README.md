@@ -1,4 +1,5 @@
-![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/icon/icon.png)
+![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png)
+
 
 # CHAR
  Chinese character variant converter
@@ -42,9 +43,8 @@ converter.convert_file(input_file, output_file)
 [OpenCC](https://github.com/BYVoid/OpenCC)
 
 
-
 ## Data filtering
-
+![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/workflow.png)
 
 
 ## Contributor
