@@ -33,7 +33,7 @@ converter.convert_file(input_file, output_file)
 ```
 
 ## Data source
-[Dictionary of Variant Chinese Characters, by the Ministry of Education, Taiwan, 2017](https://dict.variants.moe.edu.tw/variants/rbt/home.do)
+[Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/variants/rbt/home.do)
 
 [CBDB Team](https://projects.iq.harvard.edu/cbdb)
 
