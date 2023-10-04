@@ -8,6 +8,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'msgpack',
+        'setuptools',
     ],
     package_data={
         'char_converter': ['data/*.msgpack', 'char_converter/*.py', 
