@@ -1,15 +1,10 @@
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png)
 
 
-
 **Chinese character variant converter**
-
 [![image](https://img.shields.io/pypi/v/char-converter.svg)](https://pypi.org/project/char-converter)
-
 [![image](https://img.shields.io/badge/License-Apache-green.svg)](http://www.apache.org/licenses/)
-
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yukiyuqichen/CHAR/blob/main/test/test.ipynb)
-
 
 
 ## Install
