@@ -10,6 +10,10 @@ setup(
         'os',
         'msgpack',
     ],
+    package_data={
+        'char_converter': ['data/*.msgpack', 'char_converter/*.py', 
+                           'icon/*.png', 'LICENSE', 'README.md', 'setup.py']
+    },
     description='A library to convert variant Chinese characters to standard simplified or traditional characters.',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
