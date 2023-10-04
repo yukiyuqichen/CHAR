@@ -25,13 +25,5 @@ class CharConverter:
         :param text: The input text.
         :return: Converted text.
         """
-        converted_text = []
-        for char in text:
-            for key in self.mapping:
-                if char in self.mapping[key]:
-                    converted_text.append(self.mapping[key][char][0])   # only take the first one
-                    break
-                else:
-                    converted_text.append(char)
-                    break
+        converted_text = [self.mapping.get(char, [char])[0] for char in text]
         return ''.join(converted_text)
