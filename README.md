@@ -9,7 +9,14 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
 
-# Chinese Character Variant Converter
+
+<p align="center">
+<big><strong>Chinese character variant converter</strong></big>
+</p>
+<p align="center">
+an open-sourced library for converting <u>Chinese character variants</u> to <u>standard simplified or traditional characters</u>.
+</p>
+
 
 ## Install
 ```
