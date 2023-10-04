@@ -11,8 +11,8 @@ setup(
         'setuptools',
     ],
     package_data={
-        'char_converter': ['data/*.msgpack', 'char_converter/*.py', 
-                           'icon/*.png', 'LICENSE', 'README.md', 'setup.py']
+        'char_converter': ['char_converter/*.py', 'char_converter/data/*.msgpack',  
+                           'LICENSE', 'README.md', 'setup.py']
     },
     description='A library to convert variant Chinese characters to standard simplified or traditional characters.',
     long_description=open('README.md', encoding='utf-8').read(),
