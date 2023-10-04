@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='char_converter',
-    version='0.35',
+    version='0.36',
     author='Yuqi Chen',
     author_email='cyq0722@pku.edu.cn',
     packages=find_packages(),
