@@ -1,10 +1,10 @@
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png)
 
 
-**Chinese character variant converter**
+# Chinese character variant converter
 
 [![image](https://img.shields.io/pypi/v/char-converter.svg)](https://pypi.org/project/char-converter)
-[![image](https://img.shields.io/badge/License-Apache-green.svg)](http://www.apache.org/licenses/)
+[![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yukiyuqichen/CHAR/blob/main/test/test.ipynb)
 
 
@@ -28,23 +28,25 @@ converter = CharConverter('v2s')
 converted_text = converter.convert(text)
 # 苟余情其信姱以练要兮，长顑颔亦何伤。
 ```
+
 ### Convert file
 ```
 from char_converter import CharConverter
 
 converter = CharConverter('v2s')
 converter.convert_file(input_file, output_file)
-
 ```
 
 ## Data source
-[Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/variants/rbt/home.do)
+<a href="https://projects.iq.harvard.edu/cbdb">   <img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="85">
+</a> **CBDB Project**
 
-[General Standard Chinese Characters Table](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)
+ <a href="https://github.com/BYVoid/OpenCC">   <img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="66">
+</a>  **OpenCC**  [![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
 
-[CBDB Team](https://projects.iq.harvard.edu/cbdb)
+**<a href="https://dict.variants.moe.edu.tw/variants/rbt/home.do" style="color: black;">Dictionary of Variant Chinese Characters</a>**
 
-[OpenCC](https://github.com/BYVoid/OpenCC)
+**<a href="http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html" style="color: black;">General Standard Chinese Characters Table</a>**
 
 
 ## Data filtering
