@@ -11,7 +11,7 @@
 
 
 <p align="center">
-<big><strong>Chinese character variant converter</strong></big>
+<big><strong>Chinese Character Variant Converter</strong></big>
 </p>
 <p align="center">
 an open-sourced library for converting <u>Chinese character variants</u> to <u>standard simplified or traditional characters</u>.
