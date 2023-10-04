@@ -2,8 +2,14 @@
 
 # CHAR
  Chinese character variant converter
+
+## Install
+```
+pip install char-converter
+```
  
 ## Usage
+### Convert text
 ```
 from char_converter import CharConverter
 
@@ -17,6 +23,15 @@ converter = CharConverter('v2s')
 converted_text = converter.convert(text)
 # 苟余情其信姱以练要兮，长顑颔亦何伤。
 ```
+### Convert file
+```
+from char_converter import CharConverter
+
+converter = CharConverter('v2s')
+converter.convert_file(input_file, output_file)
+
+```
+
 ## Contributor
 Yuqi Chen (data collection and programing), Yiyi Wang (proofreading), Fengyi Ji (data collection)
 
