@@ -7,7 +7,7 @@ Author-email: cyq0722@pku.edu.cn
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-<img src="https://github.com/yukiyuqichen/CHAR/blob/main/icon/icon.png" width="300" />
+![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/icon/icon.png)
 
 # CHAR
  Chinese character variant converter
