@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='char_converter',
-    version='0.3',
+    version='0.31',
     author='Yuqi Chen',
     author_email='cyq0722@pku.edu.cn',
     packages=find_packages(),
@@ -14,6 +14,7 @@ setup(
         'char_converter': ['char_converter/*.py', 'char_converter/data/*.msgpack',  
                            'LICENSE', 'README.md', 'setup.py']
     },
+    include_package_data=True,
     description='A library to convert variant Chinese characters to standard simplified or traditional characters.',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
