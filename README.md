@@ -9,7 +9,7 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
 
-# Chinese character variant converter
+# Chinese Character Variant Converter
 
 ## Install
 ```
