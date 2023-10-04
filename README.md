@@ -38,11 +38,14 @@ converter.convert_file(input_file, output_file)
 ```
 
 ## Data source
-<a href="https://projects.iq.harvard.edu/cbdb">   <img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="85">
-</a> **CBDB Project**
+<a href="https://projects.iq.harvard.edu/cbdb">   <img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="50">
+</a>
+**CBDB Project**
 
- <a href="https://github.com/BYVoid/OpenCC">   <img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="66">
-</a>  **OpenCC**  [![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
+<a href="https://github.com/BYVoid/OpenCC">   <img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="50">
+</a>
+**OpenCC**
+[![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
 
 **<a href="https://dict.variants.moe.edu.tw/variants/rbt/home.do" style="color: black;">Dictionary of Variant Chinese Characters</a>**
 
