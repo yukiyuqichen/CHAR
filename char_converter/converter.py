@@ -10,6 +10,7 @@ class CharConverter:
         Initialize the converter with a option format.
 
         :param option: option format, either 'v2s' (simplified) or 'v2t' (traditional).
+        :param mode: conversion mode, either 'one2one' or 'one2many'.
         """
         if option not in ['v2s', 'v2t']:
             raise ValueError("Option must be either 'v2s' (simplified) or 'v2t' (traditional).")
@@ -17,6 +18,20 @@ class CharConverter:
 
         with open(mapping_file_path, 'rb') as f:
             self.mapping = msgpack.unpack(f, raw=False)
+        
+        self.mode = 'one2one'
+    
+
+    def set_mode(self, mode):
+        """
+        Set the conversion mode.
+
+        :param mode: conversion mode, either 'one2one' or 'one2many'.
+        """
+        if mode not in ['one2one', 'one2many']:
+            raise ValueError("Mode must be either 'one2one' or 'one2many'.")
+        self.mode = mode
+        print(f"Conversion mode is set to '{mode}'.")
 
 
     def convert(self, text):
@@ -26,7 +41,14 @@ class CharConverter:
         :param text: The input text.
         :return: Converted text.
         """
-        converted_text = [self.mapping.get(char, [char])[0] for char in text]
+        if self.mode == 'one2one':
+            converted_text = [self.mapping.get(char, [char])[0] for char in text]
+        elif self.mode == 'one2many':
+            converted_text = [
+                '【' + '|'.join(self.mapping.get(char, char)) + '】' if len(self.mapping.get(char, char)) > 1 
+                else self.mapping.get(char, [char])[0] 
+                for char in text
+            ]
         return ''.join(converted_text)
 
 
