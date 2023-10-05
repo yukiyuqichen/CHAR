@@ -87,5 +87,10 @@ converter.convert_file(input_file, output_file)
 
 **Yiyi Wang** (proofreading), **Fengyi Ji** (data collection)
 
+## License
+
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+
 
 
