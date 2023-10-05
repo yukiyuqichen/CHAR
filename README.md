@@ -16,12 +16,9 @@
 <p align="center">
 an open-source library for converting <u>Chinese character variants</u> to <u>standard simplified or traditional characters</u>.
 </p>
-
-
-*If you're curious about our name and logo: 
-
-'CHAR' comes from 'Chinese character variant' and also refers to a type of beautiful fish with a gradient of red color (Arctic Char).
-
+<p align="center">
+* "CHAR" comes from "Chinese character variant" and also refers to a type of beautiful fish with a gradient of red color (Arctic Char).
+</p>
 
 ## Install
 ```
