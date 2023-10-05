@@ -14,10 +14,10 @@
 <big><strong>Chinese Character Variant Converter,</strong></big>
 </p>
 <p align="center">
-an open-source library for converting <u>Chinese character variants</u> to <u>standard simplified or traditional characters</u>.
+<strong>an open-source library for converting Chinese character variants to standard simplified or traditional characters.</strong>
 </p>
 <p align="center">
-* "CHAR" comes from "Chinese character variant" and also refers to a type of beautiful fish with a gradient of red color (Arctic Char).
+* About the project's name and logo: "CHAR" comes from "Chinese character variant" and also refers to a type of beautiful fish with a gradient of red color (Arctic Char).
 </p>
 
 ## Install
