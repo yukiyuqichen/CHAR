@@ -49,8 +49,6 @@ text = '鈡𩄇毓秀'
 
 converter = CharConverter('v2t')
 converter.set_mode('one2many')
-# Conversion mode is set to 'one2many'.
-
 converted_text = converter.convert(text)
 # 【鍾|鐘】靈毓秀
 ```
