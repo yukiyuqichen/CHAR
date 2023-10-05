@@ -27,6 +27,7 @@ pip install char-converter
 
 ## Usage
 ### Convert text
+1. Mode: one2one
 ```
 from char_converter import CharConverter
 
@@ -39,6 +40,19 @@ converted_text = converter.convert(text)
 converter = CharConverter('v2s')
 converted_text = converter.convert(text)
 # 苟余情其信姱以练要兮，长顑颔亦何伤。
+```
+2. Mode: one2many
+```
+from char_converter import CharConverter
+
+text = '鈡𩄇毓秀'
+
+converter = CharConverter('v2t')
+converter.set_mode('one2many')
+# Conversion mode is set to 'one2many'.
+
+converted_text = converter.convert(text)
+# 【鍾|鐘】靈毓秀
 ```
 
 ### Convert file
