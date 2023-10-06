@@ -20,6 +20,11 @@
 * About the project's name and logo: "CHAR" comes from "Chinese character variant" and also refers to a type of beautiful fish with a gradient of red color (Arctic Char).
 </p>
 
+# Online Demo
+[Char Converter Demo](https://yukiyuqichen.github.io/CHAR/)
+
+# Python
+
 ## Install
 ```
 pip install char-converter
@@ -61,7 +66,7 @@ converter = CharConverter('v2s')
 converter.convert_file(input_file, output_file)
 ```
 
-## Data source
+# Data source
 
 **[CBDB Project](https://projects.iq.harvard.edu/cbdb)**
 <img src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1696407478" width="35">
@@ -75,11 +80,11 @@ converter.convert_file(input_file, output_file)
 **[General Standard Chinese Characters Table](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)**
 
 
-## Data filtering
+# Data filtering
 ![Image](https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/workflow.png)
 
 
-## Contributors
+# Contributors
 
 **Yuqi Chen** (data collection and programming)
 
