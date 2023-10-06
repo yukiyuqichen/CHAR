@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char Converter</title>
+    <script src="charConverter.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        img.logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 120px; /* Increased size */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .right-section {
+            flex: 1;
+        }
+
+        label,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #ADD8E6; /* Light Blue */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #87CEEB; /* Slightly darker shade of Light Blue */
+        }
+
+        textarea#inputText {
+            margin-bottom: 20px; /* Added margin to the bottom */
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px; /* Added margin to the bottom */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/icon.png" alt="Char Converter Logo" class="logo">
+            <h2>Char Converter</h2>
+        </div>
+        <div class="content">
+            <div class="left-section">
+                <!-- Option and Mode Selection -->
+                <h3>Settings</h3>
+                <label for="optionSelect">Option:</label>
+                <select id="optionSelect">
+                    <option value="v2s">v2s (Simplified)</option>
+                    <option value="v2t">v2t (Traditional)</option>
+                </select>
+                <label for="modeSelect">Mode:</label>
+                <select id="modeSelect">
+                    <option value="one2one">one2one</option>
+                    <option value="one2many">one2many</option>
+                </select>
+
+                <!-- For convert_file -->
+                <h3>Convert File</h3>
+                <input type="file" id="fileInput">
+                <button onclick="convertFile()">Convert and Download</button>
+            </div>
+            <div class="right-section">
+                <!-- For convert_text -->
+                <h3>Convert Text</h3>
+                <textarea id="inputText" rows="10" cols="50"></textarea>
+                <button onclick="convertText()">Convert</button>
+                <textarea id="outputText" rows="10" cols="50" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
