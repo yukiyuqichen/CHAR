@@ -21,7 +21,7 @@
 </p>
 
 # Online Demo
-<p style="text-align: center;">
+<p align="center">
   <a href="https://yukiyuqichen.github.io/CHAR/">Char Converter Demo</a>
 </p>
 
