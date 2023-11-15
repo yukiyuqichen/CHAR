@@ -96,7 +96,12 @@ converter.convert_file(input_file, output_file)
 
 **Hongsu Wang** (project manager)
 
-**Yiyi Wang** (proofreading), **Fengyi Ji** (data collection)
+**Yiyi Wang** (proofreading)
+
+**Fengyi Ji** (data collection)
+
+**Kaini Xiong** (proofreading)
+
 
 ## License
 
