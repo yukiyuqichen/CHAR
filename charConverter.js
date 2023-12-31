@@ -42,7 +42,7 @@ class CharConverter {
                 convertedText.push(this.mapping[char] ? this.mapping[char][0] : char);
             } else if (this.mode === 'one2many') {
                 if (this.mapping[char] && this.mapping[char].length > 1) {
-                    convertedText.push(`&#8203;``oaicite:{"number":1,"invalid_reason":"Malformed citation &#8203;``oaicite:{"number":1,"invalid_reason":"Malformed citation 【${this.mapping[char].join('|')}】"}``&#8203;"}``&#8203;`);
+                    convertedText.push(`【${this.mapping[char].join('|')}】`);
                 } else {
                     convertedText.push(this.mapping[char] ? this.mapping[char][0] : char);
                 }
