@@ -33,7 +33,7 @@
 
 ## Install
 ```
-pip install char-converter
+pip install char-converter -U
 ```
 
 ## Usage
