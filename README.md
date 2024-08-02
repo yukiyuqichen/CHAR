@@ -35,9 +35,9 @@
 ```
 pip install char-converter
 ```
-**Important Note:** We have been checking and updating the data from time to time. Please run the following command to **ensure the package is the latest version** before using it to handle important mateirals every time.
 
 ## Update
+**Important Note:** We have been checking and updating the data from time to time. Please run the following command to **ensure the package is the latest version** before using it to handle important mateirals every time.
 ```
 pip install char-converter -U
 ```
