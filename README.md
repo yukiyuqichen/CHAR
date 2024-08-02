@@ -33,6 +33,12 @@
 
 ## Install
 ```
+pip install char-converter
+```
+**Important Note:** We have been checking and updating the data from time to time. Please run the following command to ensure the package is the latest version.
+
+## Upgrade
+```
 pip install char-converter -U
 ```
 
