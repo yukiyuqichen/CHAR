@@ -29,6 +29,12 @@
 <img src="https://raw.githubusercontent.com/yukiyuqichen/CHAR/main/img/demo.png" />
 </p>
 
+
+
+# News
+20
+
+
 # Python
 
 ## Install
@@ -77,6 +83,53 @@ from char_converter import CharConverter
 converter = CharConverter('v2s')
 converter.convert_file(input_file, output_file)
 ```
+
+
+
+# JavaScript
+
+## Install
+```
+npm install char_converter
+```
+
+## Update
+**Important Note:** We have been checking and updating the data from time to time. Since our npm package retrieves the data directly from the online source, there's no need to update the package itself every time to get the latest data.
+```
+npm install char_converter@latest
+```
+
+## Usage
+### Convert text
+1. Mode: one2one
+```
+const CharConverter = require('char_converter');
+
+const text = '苟馀情其訫姱㠯练要兮，镸顑頷亦何伤。';
+
+const converter = new CharConverter('v2t'); // Variant to Traditional
+converter.setMode('one2one');
+const convertedText = converter.convert(text);
+console.log(convertedText); // 苟餘情其信姱以練要兮，長顑頷亦何傷。
+
+const converter = new CharConverter('v2s'); // Variant to Simplified
+converter.setMode('one2one');
+const convertedText = converter.convert(text);
+console.log(convertedText); // 苟余情其信姱以练要兮，长顑颔亦何伤。
+```
+2. Mode: one2many
+```
+const CharConverter = require('char_converter');
+
+const text = '鈡𩄇毓秀'
+
+const converter = new CharConverter('v2t'); // Variant to Traditional
+converter.setMode('one2many');
+const convertedText = converter.convert(text);
+console.log(convertedText); // 【鍾|鐘】靈毓秀
+```
+
+
 
 # Data source
 
