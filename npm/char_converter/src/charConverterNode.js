@@ -1,4 +1,4 @@
-class CharConverter {
+class CharConverterNode {
     constructor(option, source = 'online') {
         if (option !== 'v2s' && option !== 'v2t') {
             throw new Error("Option must be either 'v2s' (simplified) or 'v2t' (traditional).");
@@ -26,15 +26,16 @@ class CharConverter {
                 console.error("Error loading mapping data:", error);
             }
         } else if (this.source === 'offline') {
+            const dataPath = `./data/${option}.json`;
             try {
-                const path = require('path');
-                const dataPath = path.resolve(__dirname, '../data', `${option}.json`);
-                const data = require(dataPath);
+                const response = await fetch(dataPath);
+                const data = await response.json();
                 this.mapping = data;
-                console.log("Offline data loaded successfully. Please remember to check if the data is up-to-date.");
+                console.log("Offline data loaded successfully.");
             } catch (error) {
                 console.error("Error loading offline mapping data:", error);
             }
+            
         } else {
             throw new Error("Invalid source. It must be either 'online' or 'offline'.");
         }
@@ -68,4 +69,4 @@ class CharConverter {
     }
 }
 
-module.exports = CharConverter;
+export default CharConverterNode;

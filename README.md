@@ -88,6 +88,26 @@ converter.convert_file(input_file, output_file)
 
 
 
+# HTML
+```
+<script src="https://unpkg.com/char_converter@latest/dist/bundle.js"></script>
+<script>
+  const CharConverterClass = CharConverter.default;
+
+  const converter = new CharConverterClass('v2t', 'offline');
+  converter.setMode('one2many');
+
+  async function testConversion() {
+    const result = await converter.convert('鈡𩄇毓秀');
+    console.log(result);
+  }
+
+  testConversion();
+</script>
+```
+
+
+
 # JavaScript
 
 ## Install

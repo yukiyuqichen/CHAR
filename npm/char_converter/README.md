@@ -43,7 +43,25 @@ npm install char_converter
 npm install char_converter@latest
 ```
 
-# Usage
+# Usage (HTML)
+```
+<script src="https://unpkg.com/char_converter@latest/dist/bundle.js"></script>
+<script>
+  const CharConverterClass = CharConverter.default;
+
+  const converter = new CharConverterClass('v2t', 'offline');
+  converter.setMode('one2many');
+
+  async function testConversion() {
+    const result = await converter.convert('鈡𩄇毓秀');
+    console.log(result);
+  }
+
+  testConversion();
+</script>
+```
+
+# Usage (JavaScript)
 1. Mode: one2one
 ```
 const CharConverter = require('char_converter');
