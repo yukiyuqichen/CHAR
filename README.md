@@ -3,6 +3,8 @@
 <p align="center">
 <a href="https://pypi.org/project/char-converter">
     <img src="https://img.shields.io/pypi/v/char-converter.svg" /></a>
+<a href="https://www.npmjs.com/package/char_converter">
+    <img src="https://img.shields.io/npm/v/char_converter.svg" /></a>
 <a href="http://www.apache.org/licenses/">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
 <a href="https://colab.research.google.com/github/yukiyuqichen/CHAR/blob/main/test/test.ipynb">
@@ -32,7 +34,7 @@
 
 
 # News
-2024-11-15 npm package for JavaScript has been released.
+2024-11-15: npm package for JavaScript has been released.
 
 
 # Python
