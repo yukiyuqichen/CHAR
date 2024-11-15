@@ -32,7 +32,7 @@
 
 
 # News
-20
+2024-11-15 npm package for JavaScript has been released.
 
 
 # Python
