@@ -1,26 +1,42 @@
 class CharConverter {
-    constructor(option) {
+    constructor(option, source = 'online') {
         if (option !== 'v2s' && option !== 'v2t') {
             throw new Error("Option must be either 'v2s' (simplified) or 'v2t' (traditional).");
         }
         this.mapping = {};
         this.mode = 'one2one';
+        this.source = source; // 'online' or 'offline'
 
         // Return a promise that resolves when the mapping data is loaded
         this.loaded = this.loadMappingData(option);
     }
 
     async loadMappingData(option) {
-        const url = `https://yukiyuqichen.github.io/CHAR/char_converter/data/${option}.json`; // Replace with your GitHub JSON URL
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
+        if (this.source === 'online') {
+            const url = `https://yukiyuqichen.github.io/CHAR/char_converter/data/${option}.json`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                console.log("Online data loaded successfully.");
+                const data = await response.json();
+                this.mapping = data;
+            } catch (error) {
+                console.error("Error loading mapping data:", error);
             }
-            const data = await response.json();
-            this.mapping = data;
-        } catch (error) {
-            console.error("Error loading mapping data:", error);
+        } else if (this.source === 'offline') {
+            try {
+                const path = require('path');
+                const dataPath = path.resolve(__dirname, '../data', `${option}.json`);
+                const data = require(dataPath);
+                this.mapping = data;
+                console.log("Offline data loaded successfully. Please remember to check if the data is up-to-date.");
+            } catch (error) {
+                console.error("Error loading offline mapping data:", error);
+            }
+        } else {
+            throw new Error("Invalid source. It must be either 'online' or 'offline'.");
         }
     }
 

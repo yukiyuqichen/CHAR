@@ -32,77 +32,18 @@
 </p>
 
 
-
-# News
-2024-11-15: npm package for JavaScript has been released.
-
-
-# Python
-
-## Install
-```
-pip install char-converter
-```
-
-## Update
-**Important Note:** We have been checking and updating the data from time to time. Please run the following command to **ensure the package is the latest version** before using it to handle important mateirals every time.
-```
-pip install char-converter -U
-```
-
-## Usage
-### Convert text
-1. Mode: one2one
-```
-from char_converter import CharConverter
-
-text = '苟馀情其訫姱㠯练要兮，镸顑頷亦何伤。'
-
-converter = CharConverter('v2t')
-converted_text = converter.convert(text)
-# 苟餘情其信姱以練要兮，長顑頷亦何傷。
-
-converter = CharConverter('v2s')
-converted_text = converter.convert(text)
-# 苟余情其信姱以练要兮，长顑颔亦何伤。
-```
-2. Mode: one2many
-```
-from char_converter import CharConverter
-
-text = '鈡𩄇毓秀'
-
-converter = CharConverter('v2t')
-converter.set_mode('one2many')
-converted_text = converter.convert(text)
-# 【鍾|鐘】靈毓秀
-```
-
-### Convert file
-```
-from char_converter import CharConverter
-
-converter = CharConverter('v2s')
-converter.convert_file(input_file, output_file)
-```
-
-
-
-# JavaScript
-
-## Install
+# Install
 ```
 npm install char_converter
 ```
 
-## Update
+# Update
 **Important Note:** We have been checking and updating the data from time to time. When initializing the converter, two options ("online" and "offline") are both available. If choosing "online", the data will be retrieved directly from the updated online source. If choosing "offline", please run the following command to **ensure the package is the latest version** regularly to check if the data is up-to-date.
 ```
 npm install char_converter@latest
 ```
 
-## Usage
-### Convert text
+# Usage
 1. Mode: one2one
 ```
 const CharConverter = require('char_converter');
@@ -119,6 +60,7 @@ converter.setMode('one2one');
 const convertedText = converter.convert(text);
 console.log(convertedText); // 苟余情其信姱以练要兮，长顑颔亦何伤。
 ```
+
 2. Mode: one2many
 ```
 const CharConverter = require('char_converter');
