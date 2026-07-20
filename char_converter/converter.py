@@ -1,4 +1,4 @@
-import msgpack
+import json
 from importlib.resources import files
 
 
@@ -13,10 +13,10 @@ class CharConverter:
         """
         if option not in ['v2s', 'v2t']:
             raise ValueError("Option must be either 'v2s' (simplified) or 'v2t' (traditional).")
-        mapping_file = files('char_converter').joinpath(f'data/{option}.msgpack')
+        mapping_file = files('char_converter').joinpath(f'data/{option}.json')
 
-        with mapping_file.open('rb') as f:
-            self.mapping = msgpack.unpack(f, raw=False)
+        with mapping_file.open('r', encoding='utf-8') as f:
+            self.mapping = json.load(f)
         
         self.mode = 'one2one'
     

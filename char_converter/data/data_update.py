@@ -1,6 +1,15 @@
 import pandas as pd
-import msgpack
 import json
+
+
+def dump_json(data, path):
+    """Write a mapping as UTF-8 JSON, one entry per line for readable diffs."""
+    body = ',\n'.join(
+        json.dumps(k, ensure_ascii=False) + ': ' + json.dumps(v, ensure_ascii=False)
+        for k, v in data.items()
+    )
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write('{\n' + body + '\n}\n')
 
 def main():
     # load data
@@ -79,23 +88,9 @@ def main():
         char_after_list = char_after.split('|')
         dict_v2s[char_before] = char_after_list
 
-    # save dict as json
-    with open("./data/v2t.json", "w") as json_file:
-        json.dump(dict_v2t, json_file)
-    with open("./data/v2s.json", "w") as json_file:
-        json.dump(dict_v2s, json_file)
-
-    # convert dict to MessagePack and save
-    msgpack_file = './data/v2t.msgpack'
-    data = dict_v2t
-    with open(msgpack_file, 'wb') as f:
-        packed_data = msgpack.packb(data, use_bin_type=True)
-        f.write(packed_data)
-    msgpack_file = './data/v2s.msgpack'
-    data = dict_v2s
-    with open(msgpack_file, 'wb') as f:
-        packed_data = msgpack.packb(data, use_bin_type=True)
-        f.write(packed_data)
+    # save dicts as json
+    dump_json(dict_v2t, "./data/v2t.json")
+    dump_json(dict_v2s, "./data/v2s.json")
 
 if __name__ == '__main__':
     main()

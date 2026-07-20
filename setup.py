@@ -7,11 +7,9 @@ setup(
     author_email='chenyuqi@hku.hk',
     packages=find_packages(),
     python_requires='>=3.9',
-    install_requires=[
-        'msgpack',
-    ],
+    install_requires=[],
     package_data={
-        'char_converter': ['*.py', 'data/*.msgpack']
+        'char_converter': ['*.py', 'data/*.json']
     },
     include_package_data=True,
     description='A library to convert variant Chinese characters to standard simplified or traditional characters.',
