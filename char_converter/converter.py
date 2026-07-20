@@ -1,6 +1,5 @@
-import os
 import msgpack
-import pkg_resources
+from importlib.resources import files
 
 
 class CharConverter:
@@ -14,9 +13,9 @@ class CharConverter:
         """
         if option not in ['v2s', 'v2t']:
             raise ValueError("Option must be either 'v2s' (simplified) or 'v2t' (traditional).")
-        mapping_file_path = pkg_resources.resource_filename('char_converter', f'data/{option}.msgpack')
+        mapping_file = files('char_converter').joinpath(f'data/{option}.msgpack')
 
-        with open(mapping_file_path, 'rb') as f:
+        with mapping_file.open('rb') as f:
             self.mapping = msgpack.unpack(f, raw=False)
         
         self.mode = 'one2one'
