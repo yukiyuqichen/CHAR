@@ -56,6 +56,7 @@
         select,
         textarea,
         button {
+            box-sizing: border-box;
             width: 100%;
             margin-bottom: 15px;
             padding: 10px;
@@ -80,6 +81,16 @@
 
         input[type="file"] {
             margin-bottom: 20px; /* Added margin to the bottom */
+        }
+
+        .button-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-row button {
+            width: auto;
+            flex: 1;
         }
     </style>
 </head>
@@ -114,9 +125,11 @@
                 <!-- For convert_text -->
                 <h3>Convert Text</h3>
                 <textarea id="inputText" rows="10" cols="50"></textarea>
-                <button onclick="convertText()">Convert</button>
+                <div class="button-row">
+                    <button onclick="convertText()">Convert</button>
+                    <button onclick="copyOutput()">Copy Result</button>
+                </div>
                 <textarea id="outputText" rows="10" cols="50" readonly></textarea>
-                <button onclick="copyOutput()">Copy Result</button>
             </div>
         </div>
     </div>
