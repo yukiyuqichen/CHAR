@@ -1,5 +1,7 @@
-import v2tData from './data/v2t.json' assert { type: 'json' };
-import v2sData from './data/v2s.json' assert { type: 'json' };
+// Single source of truth: the Python package's data dir at the repo root.
+// webpack inlines these into dist/bundle.js at build time.
+import v2tData from '../../../char_converter/data/v2t.json' assert { type: 'json' };
+import v2sData from '../../../char_converter/data/v2s.json' assert { type: 'json' };
 
 class CharConverterBrowser {
     constructor(option, source = 'online') {
@@ -56,6 +58,9 @@ class CharConverterBrowser {
         // Ensure mapping data is loaded before converting
         await this.loaded;
 
+        // Normalize CJK compatibility ideographs to unified code points so the
+        // mapping needs no compatibility-code-point keys (parity with Python).
+        text = text.normalize('NFC');
         let convertedText = [];
         for (let char of text) {
             if (this.mode === 'one2one') {

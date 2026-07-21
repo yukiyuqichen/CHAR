@@ -26,7 +26,7 @@ class CharConverterNode {
                 console.error("Error loading mapping data:", error);
             }
         } else if (this.source === 'offline') {
-            const dataPath = `./data/${option}.json`;
+            const dataPath = `../../../char_converter/data/${option}.json`;
             try {
                 const response = await fetch(dataPath);
                 const data = await response.json();
@@ -53,6 +53,9 @@ class CharConverterNode {
         // Ensure mapping data is loaded before converting
         await this.loaded;
 
+        // Normalize CJK compatibility ideographs to unified code points so the
+        // mapping needs no compatibility-code-point keys (parity with Python).
+        text = text.normalize('NFC');
         let convertedText = [];
         for (let char of text) {
             if (this.mode === 'one2one') {
