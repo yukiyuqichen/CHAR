@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "char_converter"
+version = "0.52"
+description = "A library to convert variant Chinese characters to standard simplified or traditional characters."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Yuqi Chen", email = "chenyuqi@hku.hk" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yukiyuqichen/CHAR"
+
+[tool.setuptools]
+packages = ["char_converter"]
+
+[tool.setuptools.package-data]
+char_converter = ["data/*.json"]
