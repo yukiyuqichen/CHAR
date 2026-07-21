@@ -1,5 +1,7 @@
-import v2tData from './data/v2t.json' assert { type: 'json' };
-import v2sData from './data/v2s.json' assert { type: 'json' };
+// Single source of truth: the Python package's data dir at the repo root.
+// webpack inlines these into dist/bundle.js at build time.
+import v2tData from '../../../char_converter/data/v2t.json' assert { type: 'json' };
+import v2sData from '../../../char_converter/data/v2s.json' assert { type: 'json' };
 
 class CharConverterBrowser {
     constructor(option, source = 'online') {

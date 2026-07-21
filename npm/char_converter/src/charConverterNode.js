@@ -26,7 +26,7 @@ class CharConverterNode {
                 console.error("Error loading mapping data:", error);
             }
         } else if (this.source === 'offline') {
-            const dataPath = `./data/${option}.json`;
+            const dataPath = `../../../char_converter/data/${option}.json`;
             try {
                 const response = await fetch(dataPath);
                 const data = await response.json();
