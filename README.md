@@ -162,7 +162,7 @@ console.log(convertedText); // 【鍾|鐘】靈毓秀
 <img src="https://c.disquscdn.com/uploads/users/3634/6167/avatar200.jpg?1660808503" width="25">
 [![image](https://img.shields.io/badge/License-Apache--2.0-green.svg)](http://www.apache.org/licenses/)
 
-**[Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/variants/rbt/home.do)**
+**[Dictionary of Variant Chinese Characters](https://dict.variants.moe.edu.tw/)**
 
 **[General Standard Chinese Characters Table](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)**
 
