@@ -92,3 +92,14 @@ function convertText() {
         document.getElementById('outputText').value = converted;
     });
 }
+
+function copyOutput() {
+    const outputText = document.getElementById('outputText');
+    if (!outputText.value) {
+        return;
+    }
+    navigator.clipboard.writeText(outputText.value).catch(() => {
+        outputText.select();
+        document.execCommand('copy');
+    });
+}
