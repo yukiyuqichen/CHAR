@@ -1,4 +1,5 @@
 import json
+import unicodedata
 from importlib.resources import files
 
 
@@ -40,6 +41,10 @@ class CharConverter:
         :param text: The input text.
         :return: Converted text.
         """
+        # Normalize CJK compatibility ideographs (and other canonical
+        # equivalents) to their unified code points, so the mapping never needs
+        # compatibility-code-point keys and any such input is handled uniformly.
+        text = unicodedata.normalize('NFC', text)
         if self.mode == 'one2one':
             converted_text = [self.mapping.get(char, [char])[0] for char in text]
         elif self.mode == 'one2many':
